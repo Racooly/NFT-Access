@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+:root{
+    --primary: #5429FF;
+    --bg:#CBCCE8;
+    --secondary: #344054;
+    --accent2: #667085;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    padding: 32px;
+    
+}
+form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-fluid{
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+}
+.mainImg{
+    width: 100%;
+    display: block;
+}
+.main{
+    width: 357px;
+    margin: auto;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+.main p{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--accent2);
+    margin-bottom: 56px ;
+}
+.register-cont{
+    margin-bottom: 20px;
+}
+.register-cont label {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--accent2);
+    margin-bottom: 8px;
+}
+.register-cont input{
+    width: 100%;
+    height: 44px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-right: 48px;
+    padding-left: 14px ;
+    position:relative;
+}
+.register-cont > div{
+    position: relative;
+    display: flex;
+    align-items: center;    
+    justify-content: flex-end;
+}
+.register-cont img{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 14px;
+}
+.register-cont #hide{
+    display: none;
+}
+.remember-forgot-cont{
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    margin-bottom: 32px;
+}
+.remember-forgot-cont a{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 14px;
+}
+.buttons button{
+    width: 100%;
+    height: 44px;
+    cursor: pointer;
+    border-radius: 8px;
+   
+}
+.buttons .blue-btn{
+    margin-bottom: 16px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+}
+.buttons .googleBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 8px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #D0D5DD;
+    background-color: white;
+}
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 8px;
+}
+.account a{
+    text-decoration: none;
+    color: var(--primary);
+}
